@@ -1,0 +1,207 @@
+/* Base styles */
+:root {
+    --color-primary: #4f46e5;
+    --color-primary-hover: #4338ca;
+    --color-primary-light: #eef2ff;
+    --color-primary-light-hover: #e0e7ff;
+    --color-gray-50: #f9fafb;
+    --color-gray-100: #f3f4f6;
+    --color-gray-600: #4b5563;
+    --color-gray-700: #374151;
+    --color-gray-900: #111827;
+    --color-red-50: #fef2f2;
+    --color-red-400: #f87171;
+    --color-red-700: #b91c1c;
+  }
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  /* Layout */
+  .container {
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #f5f3ff, #eef2ff);
+    padding: 3rem 1rem;
+  }
+  
+  .wrapper {
+    max-width: 28rem;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .header-icon {
+    margin: 0 auto;
+    height: 3rem;
+    width: 3rem;
+    color: var(--color-primary);
+  }
+  
+  .header-title {
+    margin-top: 1.5rem;
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: var(--color-gray-900);
+  }
+  
+  .header-subtitle {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--color-gray-600);
+  }
+  
+  /* Form */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-gray-700);
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+  }
+  
+  .form-textarea {
+    resize: vertical;
+    min-height: 6rem;
+  }
+  
+  /* Buttons */
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .button-primary {
+    background-color: var(--color-primary);
+    color: white;
+  }
+  
+  .button-primary:hover {
+    background-color: var(--color-primary-hover);
+  }
+  
+  .button-secondary {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+  }
+  
+  .button-secondary:hover {
+    background-color: var(--color-primary-light-hover);
+  }
+  
+  /* Card */
+  .card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .card-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-gray-900);
+  }
+  
+  .card-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-gray-600);
+  }
+  
+  .card-description {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    color: var(--color-gray-600);
+  }
+  
+  /* Error message */
+  .error {
+    background-color: var(--color-red-50);
+    border-radius: 0.375rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .error-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  
+  .error-icon {
+    flex-shrink: 0;
+    height: 1.25rem;
+    width: 1.25rem;
+    color: var(--color-red-400);
+  }
+  
+  .error-message {
+    font-size: 0.875rem;
+    color: var(--color-red-700);
+    margin: 0;
+  }
